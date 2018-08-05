@@ -83,7 +83,8 @@ def record():
     stream.close()
     p.terminate()
 
-    data_all = trim(data_all)  # we trim before normalize as threshhold applies to un-normalized wave (as well as is_silent() function)
+    data_all = trim(data_all)  
+    # We trim before normalize as threshhold applies to un-normalized wave (as well as is_silent() function)
     data_all = normalize(data_all)
     return sample_width, data_all
 
