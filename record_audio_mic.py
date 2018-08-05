@@ -100,4 +100,4 @@ while True:
     if __name__ == '__main__':
         print("Wait in silence to begin recording; wait in silence to terminate")
         record_to_file('mic-recording-'+str(round(time.time()))+'.wav')
-        print("done - result written to demo.wav")
+        print("Done - Recording saved to disk")
